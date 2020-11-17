@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane fx:id="pane" layoutX="300.0" prefHeight="750.0" prefWidth="900.0" />
+      <Button fx:id="buttonStart" layoutX="6.0" layoutY="126.0" mnemonicParsing="false" text="Start">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonStop" layoutX="147.0" layoutY="126.0" mnemonicParsing="false" text="Stop">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Slider fx:id="sliderSpeed" blockIncrement="0.05" layoutX="37.0" layoutY="29.0" majorTickUnit="1.0" max="1.0" min="-1.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" />
+      <Button fx:id="buttonEarth" layoutX="74.0" layoutY="189.0" mnemonicParsing="false" text="Earth">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelSpeed" layoutX="38.0" layoutY="83.0" text="Speed = 0.000">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
